@@ -62,8 +62,8 @@ stages {
     stage('Build and Push Docker Image') {
       steps {
         sh label: '', script: '''sudo docker build -t gameoflife-image:$BUILD_NUMBER .
-                                 sudo docker tag gameoflife-image:$BUILD_NUMBER docker.io/raknas000/gameoflife-image:$BUILD_NUMBER
-                                 docker push docker.io/raknas000/gameoflife-image:$BUILD_NUMBER'''
+                                 sudo docker tag gameoflife-image:$BUILD_NUMBER docker.io/venkatesh3006/gameoflife-image:$BUILD_NUMBER
+                                 docker push docker.io/venkatesh3006/gameoflife-image:$BUILD_NUMBER'''
                                  
       }
  }
